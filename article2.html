@@ -1,1 +1,47 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF.js Example</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+</head>
+<body>
+    <h1>PDF.js Example</h1>
+    <canvas id="pdf-canvas"></canvas>
+    <script>
+        var url = 'artc2.pdf';
+
+        // Loaded via the script tag, create a PDF.js object
+        var pdfjsLib = window['pdfjs-dist/build/pdf'];
+
+        // The workerSrc property must be specified before using PDF.js
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.worker.min.js';
+
+        // Fetch the PDF document from the URL
+        pdfjsLib.getDocument(url).promise.then(function (pdfDoc_) {
+            var pdfDoc = pdfDoc_;
+            console.log("PDF loaded");
+
+            // Fetch the first page
+            pdfDoc.getPage(1).then(function (page) {
+                var scale = 1.5;
+                var viewport = page.getViewport({ scale: scale });
+
+                var canvas = document.getElementById('pdf-canvas');
+                var context = canvas.getContext('2d');
+                canvas.height = viewport.height;
+                canvas.width = viewport.width;
+
+                // Render PDF page into the canvas context
+                var renderContext = {
+                    canvasContext: context,
+                    viewport: viewport
+                };
+                page.render(renderContext);
+            });
+        });
+    </script>
+</body>
+</html>
