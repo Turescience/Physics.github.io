@@ -1,61 +1,59 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>简单网页</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-        section {
-            padding: 20px;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #333;
-            color: white;
-        }
-        a {
-            color: #4CAF50;
-        }
-    </style>
+    <title>科普网站</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+    <!-- Header -->
     <header>
-        <h1>欢迎来到我的简单网页</h1>
+        <nav>
+            <ul>
+                <li><a href="/">主页</a></li>
+                <li><a href="/articles">科普文章</a></li>
+                <li><a href="/topics">热点话题</a></li>
+                <li><a href="/videos">视频专区</a></li>
+                <li><a href="/about">关于我们</a></li>
+                <li><a href="/contact">联系我们</a></li>
+                <li><input type="text" placeholder="搜索..."></li>
+            </ul>
+        </nav>
     </header>
 
-    <section>
-        <h2>这是一个示例页面</h2>
-        <p>这里是一个段落内容。你可以修改这个网页来实现你自己的需求。</p>
+    <!-- Main Content -->
+    <main>
+        <section class="hero-banner">
+            <img src="banner.jpg" alt="科普banner">
+        </section>
 
-        <h3>一张图片展示：</h3>
-        <img src="https://via.placeholder.com/600x400" alt="示例图片">
+        <section class="latest-articles">
+            <h2>最新文章</h2>
+            <ul>
+                <li><a href="/article1">文章标题 1</a></li>
+                <li><a href="/article2">文章标题 2</a></li>
+                <li><a href="/article3">文章标题 3</a></li>
+            </ul>
+        </section>
 
-        <h3>访问我的个人博客</h3>
-        <p>点击以下链接，访问我的个人博客：</p>
-        <a href="https://www.example.com" target="_blank">我的个人博客</a>
-    </section>
+        <section class="topics">
+            <h2>精选话题</h2>
+            <ul>
+                <li><a href="/topic/1">话题 1</a></li>
+                <li><a href="/topic/2">话题 2</a></li>
+                <li><a href="/topic/3">话题 3</a></li>
+            </ul>
+        </section>
+    </main>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 我的简单网页 | 版权所有</p>
+        <ul>
+            <li><a href="/about">关于我们</a></li>
+            <li><a href="/privacy">隐私政策</a></li>
+            <li><a href="/terms">用户协议</a></li>
+        </ul>
     </footer>
-
 </body>
 </html>
