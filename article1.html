@@ -1,92 +1,171 @@
-
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paper Mills and Research Integrity in Cosmology</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
     <style>
         body {
-            font-family: 'Times New Roman', serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 210mm;
+            background-color: #fff;
+            color: #000;
         }
-        .container {
-            width: 21cm;
-            margin: 1cm auto;
-        }
+
         h1, h2, h3 {
+            color: #003366;
+        }
+
+        h1 {
             text-align: center;
-            font-size: 24px;
-            margin-bottom: 20px;
+            font-size: 2.5em;
         }
-        .abstract, .content {
-            font-size: 14pt;
+
+        h2 {
+            font-size: 1.8em;
+            border-bottom: 2px solid #003366;
+            padding-bottom: 5px;
         }
-        .abstract p {
-            margin-bottom: 20px;
+
+        h3 {
+            font-size: 1.5em;
+            padding-top: 15px;
         }
-        pre, code {
-            font-family: "Courier New", Courier, monospace;
+
+        p {
+            text-align: justify;
+            font-size: 1.1em;
+            line-height: 1.6em;
         }
-        .equation {
-            text-align: center;
+
+        .abstract {
+            font-style: italic;
             margin: 20px 0;
         }
-        .bibliography {
-            font-size: 12pt;
+
+        pre, code {
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            padding: 10px;
+            font-family: monospace;
+            font-size: 1.1em;
+        }
+
+        .equation {
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 1em;
+            color: #555;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .subsection {
+            margin-bottom: 30px;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        .green {
+            color: green;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Paper Mills and Research Integrity in Cosmology: Investigating P-V Phase Transitions in Massive Gravitational Systems</h1>
-        <p class="abstract"><strong>Abstract:</strong><br>We will use a discussion of some recently encountered papers to explain the phenomenon of "paper mills" in the context of cosmological thermodynamics. We explored how these operations produce papers, discussed their harmful effects, and examined the internal and external factors contributing to this issue. Additionally, we expressed our hopes for the healthy development of research in this field.</p>
-        
+
+    <h1>Paper Mills and Research Integrity in Cosmology: Investigating P-V Phase Transitions in Massive Gravitational Systems</h1>
+    <div class="abstract">
+        <p><strong>Abstract:</strong> We will use a discussion of some recently encountered papers to explain the phenomenon of "paper mills" in the context of cosmological thermodynamics. We explored how these operations produce papers, discussed their harmful effects, and examined the internal and external factors contributing to this issue. Additionally, we expressed our hopes for the healthy development of research in this field.</p>
+    </div>
+
+    <div class="table-of-contents">
         <h2>Table of Contents</h2>
         <ul>
             <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#calculation">Calculation of Thermodynamics Quantities</a></li>
-            <li><a href="#thermodynamic-properties">Thermodynamic Properties</a></li>
+            <li><a href="#thermodynamic-calculations">Calculation of Thermodynamic Quantities</a></li>
+            <ul>
+                <li><a href="#volume">Calculation of Volume</a></li>
+                <li><a href="#temperature">Calculation of Temperature</a></li>
+                <li><a href="#pressure">Calculation of Pressure</a></li>
+                <li><a href="#phase-transitions">Phase Transition</a></li>
+                <li><a href="#heat-capacities">Heat Capacities</a></li>
+            </ul>
             <li><a href="#research-integrity">Research Integrity</a></li>
         </ul>
-        
-        <h2 id="introduction">Introduction</h2>
-        <p>A hundred years ago, the birth of general relativity allowed us to study the laws of nature on a higher dimension. Fifty years ago, the concepts of black hole entropy and temperature were proposed by Jacob Bekenstein and Stephen Hawking, respectively. This marked the fusion of general relativity with thermodynamics.</p>
-        <p>...</p>
-        
-        <h2 id="calculation">Calculation of Thermodynamics Quantities</h2>
-        <p>From that point on, we have been able to study the thermodynamic properties of massive gravitational systems such as black holes and FLRW universe, much like we study ideal fluids.</p>
-        
-        <h3>Calculation of Volume</h3>
-        <p>The volume of these fluid systems is related to their shape and size; for instance, the volume calculation differs for black holes of different shapes.</p>
-        <div class="equation">
-            \[
-            V = \frac{4\pi}{3} \tilde{r}_{h}^{3}
-            \]
+    </div>
+
+    <div id="introduction" class="section">
+        <h2>Introduction</h2>
+        <p>A hundred years ago, the birth of general relativity allowed us to study the laws of nature on a higher dimension. Fifty years ago, the concepts of black hole entropy and temperature were proposed by Jacob Bekenstein and Stephen Hawking. This marked the fusion of general relativity with thermodynamics...</p>
+    </div>
+
+    <div id="thermodynamic-calculations" class="section">
+        <h2>Calculation of Thermodynamic Quantities</h2>
+        <p>In cosmological thermodynamics, various gravitational systems are treated as fluids. The physical quantities we are interested in include temperature (T), entropy (S), pressure (P), specific heat capacity (C), and enthalpy (H)...</p>
+
+        <div id="volume" class="subsection">
+            <h3>Calculation of Volume</h3>
+            <p>The volume of these fluid systems is related to their shape and size; for instance, the volume calculation differs for black holes of different shapes...</p>
+            <pre><code>
+h^{ij}\frac{\partial
+\tilde{r}}{\partial x^{i}}\frac{\partial \tilde{r}}{\partial
+x^{j}}=0;
+            </code></pre>
+            <div class="equation">
+                <p><strong>Equation 1:</strong> ds^2 = -\left(1 - \frac{2M}{r}\right)dt^2 + \left(1 - \frac{2M}{r}\right)^{-1}dr^2 + r^2(d\theta^2 + \sin^2\theta d\phi^2)</p>
+            </div>
         </div>
-        <p>...</p>
 
-        <h3>Calculation of Temperature</h3>
-        <p>The temperature is generally expressed using the Hawking temperature:</p>
-        <div class="equation">
-            \[
-            T = \frac{|\kappa|}{2\pi}
-            \]
+        <div id="temperature" class="subsection">
+            <h3>Calculation of Temperature</h3>
+            <p>The temperature is generally expressed using the Hawking temperature:</p>
+            <pre><code>
+T=\frac{|\kappa|}{2\pi}
+            </code></pre>
         </div>
 
-        <h2 id="research-integrity">Research Integrity</h2>
-        <p>From the above discussion, it’s clear that this type of paper can be easily mass-produced. Even our undergraduate thesis projects are more challenging and meaningful than this, yet we don’t consider our work worthy of publication.</p>
-        <p>...</p>
+        <div id="pressure" class="subsection">
+            <h3>Calculation of Pressure</h3>
+            <p>The key to calculating pressure lies in the Unified First Law:</p>
+            <pre><code>
+dE = A \psi + W dV;
+            </code></pre>
+        </div>
 
-        <h3>References</h3>
-        <div class="bibliography">
-            <p>[1] Jacob D. Bekenstein, Phys. Rev. D. 7, 2333 (1973).</p>
-            <p>[2] S. W. Hawking, Phys. Rev. D. 13, 191 (1976).</p>
-            <p>[3] S. A. Hayward, Class. Quant. Grav. 15, 3147 (1998).</p>
+        <div id="phase-transitions" class="subsection">
+            <h3>Phase Transition</h3>
+            <p>The conditions for pressure-volume phase transitions typically involve changes in the state of matter at specific temperatures and pressures...</p>
+        </div>
+
+        <div id="heat-capacities" class="subsection">
+            <h3>Heat Capacities</h3>
+            <p>We calculate different heat capacities based on pressure, volume, and temperature using various thermodynamic equations...</p>
         </div>
     </div>
+
+    <div id="research-integrity" class="section">
+        <h2>Research Integrity</h2>
+        <p>From the above discussion, it’s clear that this type of paper can be easily mass-produced. Even our undergraduate thesis projects are more challenging and meaningful than this...</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Research Paper</p>
+    </footer>
 </body>
 </html>
