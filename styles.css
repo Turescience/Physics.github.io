@@ -18,7 +18,7 @@ body {
 
 /* Header Styles */
 header {
-    background: linear-gradient(135deg, #61ff61, #00ffc8); /* Gradient background */
+    background: linear-gradient(135deg, #fafafc, #d6d8d8); /* Gradient background */
     padding: 20px;
 }
 
