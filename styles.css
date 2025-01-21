@@ -82,37 +82,30 @@ main {
 .latest-articles h2, .topics h2 {
     font-size: 30px;
     margin-bottom: 16px;
-    color: #031b29; /* Set Latest Articles and Popular Topics title color */
-}
-
-.latest-articles h3, .topics h3 {
-    font-size: 24px;
-    margin-bottom: 12px;
-    color: #031b29; /* Set Latest Articles and Popular Topics title color */
+    color: #031b29; /* Set Latest Articles and Popular Topics header color */
 }
 
 .latest-articles ul, .topics ul {
     list-style-type: none;
     padding: 0;
     text-align: left;
-    color: #3498db; /* Set ul text color to sky blue */
 }
 
 .latest-articles li, .topics li {
     font-size: 20px;
     margin: 12px 0;
-    color: #000000; /* Set the color of article links to black */
 }
 
-.latest-articles a, .topics a {
+/* Link colors for specific articles and topics */
+.latest-articles li a, .topics li a {
     text-decoration: none;
-    color: #3498db;
+    color: #000000; /* Set article and topic links to black */
     font-weight: bold;
     padding: 6px 12px;
     border-radius: 5px;
 }
 
-.latest-articles a:hover, .topics a:hover {
+.latest-articles li a:hover, .topics li a:hover {
     background-color: #f0f0f0;
     color: #333;
 }
