@@ -1,0 +1,170 @@
+/* 通用基础设置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* 页面整体样式 */
+body {
+    background: #f0f8ff; /* 淡蓝色背景 */
+    color: #333; /* 字体颜色 */
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center; /* 文字居中 */
+    margin: 0;
+}
+
+/* 顶部导航 */
+header {
+    background: linear-gradient(135deg, #ff6f61, #ffbc00); /* 渐变色背景 */
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* 主体部分 */
+main {
+    padding: 40px 20px;
+}
+
+.hero-banner {
+    background: #3498db;
+    padding: 60px 20px;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.latest-articles,
+.topics {
+    margin: 40px 0;
+}
+
+.latest-articles h2, .topics h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #ff6f61; /* 标题的颜色 */
+}
+
+.latest-articles ul, .topics ul {
+    list-style-type: none;
+}
+
+.latest-articles li, .topics li {
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.latest-articles a, .topics a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.latest-articles a:hover, .topics a:hover {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* 底部样式 */
+footer {
+    background-color: #2c3e50;
+    padding: 20px;
+    color: white;
+}
+
+footer ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+footer ul li a:hover {
+    color: #ffbc00;
+}
+
+/* 输入框样式 */
+nav input[type="text"] {
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #3498db;
+    width: 200px;
+}
+
+/* 美化页面布局 */
+@page {
+    size: A4;
+    margin: 10mm;
+}
+
+/* 页面标题部分 */
+h1, h2, h3 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+/* 让页面更具层次感，增加阴影 */
+section, footer {
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 1100px;
+}
+
+.hero-banner img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
