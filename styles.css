@@ -64,8 +64,10 @@ main {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Center-align the sections */
 .latest-articles, .topics {
     margin: 40px 0;
+    text-align: center; /* Center-align content */
 }
 
 .latest-articles h2, .topics h2 {
@@ -76,6 +78,9 @@ main {
 
 .latest-articles ul, .topics ul {
     list-style-type: none;
+    padding: 0;
+    display: inline-block; /* Ensures the list items are centered */
+    text-align: left; /* Align items to the left inside the container */
 }
 
 .latest-articles li, .topics li {
