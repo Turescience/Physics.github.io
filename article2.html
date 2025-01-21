@@ -10,22 +10,17 @@
     <h1>PDF.js Example</h1>
     <canvas id="pdf-canvas"></canvas>
     <script>
-        var url = 'artc2.pdf';  // Ensure this path is correct
+             var url = 'https://raw.githubusercontent.com/Turescience/Physics.github.io/main/artc.pdf';
 
-        // Loaded via the script tag, create a PDF.js object
         var pdfjsLib = window['pdfjs-dist/build/pdf'];
-
-        // The workerSrc property must be specified before using PDF.js
         pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.worker.min.js';
 
-        // Fetch the PDF document from the URL
         pdfjsLib.getDocument(url).promise.then(function (pdfDoc_) {
             var pdfDoc = pdfDoc_;
             console.log("PDF loaded");
 
-            // Fetch the first page
             pdfDoc.getPage(1).then(function (page) {
-                var scale = 1.5;  // Adjust the scale as needed
+                var scale = 1.5;
                 var viewport = page.getViewport({ scale: scale });
 
                 var canvas = document.getElementById('pdf-canvas');
@@ -33,7 +28,6 @@
                 canvas.height = viewport.height;
                 canvas.width = viewport.width;
 
-                // Render PDF page into the canvas context
                 var renderContext = {
                     canvasContext: context,
                     viewport: viewport
