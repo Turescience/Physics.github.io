@@ -52,10 +52,10 @@ main {
 
 /* Hero banner */
 .hero-banner {
-    background: #3498db;
+    background: #f3f3f3;
     padding: 60px 20px;
     color: white;
-    font-size: 36px;
+    font-size: 24px;
     font-weight: bold;
     text-align: center;
     margin: 0 auto;
