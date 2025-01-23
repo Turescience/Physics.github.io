@@ -1,0 +1,231 @@
+/* Universal reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', serif;
+}
+
+/* Body settings */
+body {
+    background-color: #ffffff; /* White background */
+    color: #333333; /* Text color (dark gray) */
+    font-size: 18px; /* Set font size to 18px */
+    line-height: 1.4; /* Slightly smaller line-height */
+    text-align: center; /* Center-align text */
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #f0f0f0, #e5e5e5); /* Soft gradient background */
+    padding: 8px 0; /* Reduced padding */
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 12px; /* Reduced margin */
+}
+
+nav ul li a {
+    color: #000000; /* Black text color */
+    text-decoration: none;
+    font-size: 18px; /* Set consistent font size */
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #f0f0f0; /* Subtle hover effect */
+    color: #333333;
+}
+
+/* Main content styles */
+main {
+    padding: 10px 5px;
+    text-align: center;
+}
+
+/* Hero banner */
+.hero-banner {
+    background: #f9f9f9; /* Light background */
+    padding: 10px 5px;
+    color: #000000; /* Text color black */
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.hero-banner img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Center-align the section containers */
+.latest-articles, .topics {
+    margin: 12px auto;
+    text-align: center;
+    max-width: 1100px;
+    padding: 12px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.latest-articles h2, .topics h2 {
+    font-size: 30px;
+    margin-bottom: 16px;
+    color: #031b29; /* Set Latest Articles and Popular Topics header color */
+}
+
+.latest-articles ul, .topics ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.latest-articles ol, .topics ol {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.latest-articles li, .topics li {
+    font-size: 18px;
+    margin: 12px 0;
+}
+
+/* Link colors for specific articles and topics */
+.latest-articles li a, .topics li a {
+    text-decoration: none;
+    color: #000000; /* Set article and topic links to black */
+    font-weight: normal;
+    font-style: normal;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+.latest-articles li a:hover, .topics li a:hover {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2c3e50;
+    padding: 18px;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 18px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+footer ul li a:hover {
+    color: #ffbc00;
+}
+
+/* Search input field */
+nav input[type="text"] {
+    font-size: 16px;
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: 2px solid #3498db;
+    width: 200px;
+}
+
+/* A4 Page Format */
+@page {
+    size: A4;
+    margin: 20mm;
+}
+
+/* Heading Styles */
+h1, h2, h3 {
+    text-align: center;
+    color: #2c3e50; /* Dark blue color */
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 6px;
+    color: #31b29e; /* Set h2 color */
+}
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #31b29e; /* Set h3 color */
+}
+
+/* Adding Shadow and Rounded Corners */
+section, footer {
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    background-color: white;
+    margin: 18px auto;
+    max-width: 1100px;
+}
+
+/* Ensure ordered list styles are applied */
+.latest-articles ol, .topics ol {
+    list-style-type: decimal; /* Display numbers for ordered lists */
+    padding-left: 20px; /* Add left padding for better alignment */
+    margin: 12px 0; /* Add spacing around the list */
+    text-align: left; /* Align text to the left */
+}
+
+.latest-articles ol li, .topics ol li {
+    font-size: 18px;
+    margin: 12px 0;
+    color: #333333; /* Ensure consistent text color */
+}
+
+/* Links inside ordered lists */
+.latest-articles ol li a, .topics ol li a {
+    text-decoration: none;
+    color: #000000; /* Black links */
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+.latest-articles ol li a:hover, .topics ol li a:hover {
+    background-color: #f0f0f0; /* Hover effect for links */
+    color: #333333;
+}
+
+
+p {
+    margin-bottom: 20px;
+    font-size: 14pt;
+    text-align: justify;
+    line-height: 1;
+  }

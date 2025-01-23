@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KaTeX Formula Rendering</title>
+  <!-- Include KaTeX CSS -->
+  <link rel="stylesheet" href="katex.css">
+</head>
+<body>
+  <h1>KaTeX Formula Rendering Example</h1>
+  <p>This is a math formula rendered using KaTeX:</p>
+  
+  <!-- Inline Formula -->
+  <p>The quadratic formula is: $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$</p>
+  
+  <!-- Block Formula -->
+  <p>Here is a displayed formula:</p>
+  <div>
+    $$
+    \int_{a}^{b} x^2 \, dx = \frac{b^3}{3} - \frac{a^3}{3}
+    $$
+  </div>
+  
+  <!-- Include KaTeX JS -->
+  <script src="katex.js"></script>
+  <script src="auto-render.js"></script>
+  <script>
+    // Automatically render math formulas on the page
+    document.addEventListener("DOMContentLoaded", function () {
+      renderMathInElement(document.body, {
+        delimiters: [
+          { left: "$$", right: "$$", display: true },
+          { left: "\\[", right: "\\]", display: true },
+          { left: "$", right: "$", display: false },
+          { left: "\\(", right: "\\)", display: false }
+        ]
+      });
+    });
+  </script>
+</body>
+</html>

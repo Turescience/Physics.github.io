@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comment</title>
+  <link rel="stylesheet" href="katex.css">
+  <style>
+    body {
+      font-family: "Times New Roman", serif;
+      margin: 0;
+      padding: 0;
+      background-color: #89b9b3;
+      display: flex;
+      flex-direction: column; 
+      align-items: center;    
+      height: 100vh;
+    }
+    header {
+      width: 100%; 
+      background: linear-gradient(135deg, #f0f0f0, #e5e5e5); 
+      padding: 8px 0; 
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+      text-align: center;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 12px; 
+    }
+    nav ul li a {
+      color: #000000; 
+      text-decoration: none;
+      font-size: 18px; 
+      padding: 6px 10px;
+      border-radius: 5px;
+    }
+    nav ul li a:hover {
+      background-color: #f0f0f0; 
+      color: #333333;
+    }
+    .content {
+      width: 210mm;
+      padding: 20mm;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow: visible;
+      margin-top: 2mm;
+    }
+
+    .content0 {
+      width: 350mm;
+      padding: 5mm;
+      background-color: #78aaa4;;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+      overflow: visible;
+      color: #000000;
+       margin-top: 2mm;
+    }
+    h1 {
+      color: #2C3E50;
+      font-size: 24pt;
+      text-align: center;
+      margin-bottom: 80px;
+    }
+    h2, h3 {
+      color: #2C3E50;
+      font-size: 18pt;
+      text-align: justify;
+    }
+    p {
+      margin-bottom: 20px;
+      font-size: 16pt;
+      text-align: justify;
+      line-height: 1.5;
+    }
+    .formula {
+      margin: 1em 0;
+    }
+    .formula span {
+      font-size: 14pt;
+      color: rgb(4, 13, 250);
+    }
+    ol {
+      list-style-type: decimal;
+      color: rgb(0, 0, 0);
+      padding-left: 20px;
+      font-size: 14pt;
+    }
+    .math-block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 1em 0;
+      font-size: 18px;
+    }
+    .centered-title {
+        text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="cont.html">Contact</a></li>
+                <li><a href="search.html"><input type="text" placeholder="Search"></a></li>
+            </ul>
+        </nav>
+    </header>
+<div class="content0">
+  <p>We initially planned to publish this paper on arXiv, but the platform, which once accepted double-blind submissions, now has a review process. This change contradicts arXiv's original mission, and they no longer accept commentary papers.</p>
+    
+  <p>While researchers should uphold innovation and integrity, the reality is often disappointing. In academia, misconduct and fraud often overshadow honesty, partly because the public struggles to judge the credibility of papers, and honest experts lack a platform to speak up.</p>
+  
+  <p>We value fairness and felt compelled to take action. The papers in question are of poor quality—lacking innovation, overly simplistic (requiring only basic math and thermodynamics knowledge), and offering little scientific value. It’s shocking they were even published.</p>
+  
+  <p>If these issues aren’t addressed, they will lead to bigger problems down the line.</p>
+
+
+</div>
+
+<div class="content">
+    <h1>Paper Mills and Research Integrity in Cosmology: Investigating P-V Phase Transitions in Massive Gravitational Systems</h1>
+    <h2 class="centered-title">Abstract</h2>
+    <p>
+        We will use a discussion of some recently encountered papers to explain the phenomenon of “paper mills” in the context of cosmological thermodynamics. We explored how these operations produce papers, discussed their harmful effects, and examined the internal and external factors contributing to this issue. Additionally, we expressed our hopes for the healthy development of research in this field.
+    </p>
+    <h2>1. Introduction </h2>
+    <p>A hundred years ago, the birth of general relativity allowed us to study the laws of nature on a higher dimension. Fifty years ago, the concepts of black hole entropy and temperature were proposed by Jacob Bekenstein and Stephen Hawking<span class="citation">[1,2]</span>, respectively. This marked the fusion of general relativity with thermodynamics. 
+On one hand, it deepened our understanding of the natural laws governing the universe, while on the other, it made our physics more complex. The complexity arises from the use of multi-dimensional tensor calculations instead of the familiar function-based calculations, and it introduced concepts and results that were unfamiliar to us. Over the past century, many brilliant scientists have performed extensive tensor calculations on the metrics and Lagrangians of various gravitational systems, overcoming these mathematical challenges. However, it seems that we are now facing a different kind of problem. The issue now is that these complex tensor calculations have already been completed by others, and the results are readily available online. The once unfamiliar physical outcomes have gradually been accepted. As a result, these research areas, now devoid of major challenges, have attracted many amateurs and those more interested in profit than truth. They flood the academic databases with a large number of low-quality papers, often through repetitive publications, plagiarism, filler content, and even outright fabrication. This has made it difficult for genuine researchers to find high-quality papers, as they must now sift through and discern the authenticity of the content. Instead of accelerating scientific progress, this trend has slowed it down significantly. 
+</p>
+
+<p>Recently, we reviewed several papers, many of which were not only strikingly similar but, in some cases, nearly identical in content, with disorganized references and chaotic use of formulas. Reading multiple papers did not deepen our knowledge or clarify our understanding; rather, it wasted our energy and time. This is not only our experience but also that of many other authors. In order to contribute to the better development of research in this field, we have decided to write a paper.
+</p>
+
+<h2>Calculation of thermodynamics quantities</h2>
+
+<p>From that point on, we have been able to study the thermodynamic properties of massive gravitational systems such as black holes and FLRW universe, much like we study ideal fluids. You should note here that in cosmological thermodynamics, various gravitational systems are treated as fluids.
+In the thermodynamic properties of these systems, the physical quantities we are interested in include not only the temperature $(T)$ and entropy $(S)$, but also the pressure $(P)$, specific heat capacity $(C)$, and enthalpy $(H)$. Similar to classical thermodynamics, the core physical quantities in gravitational systems are still pressure, volume $(V)$, and temperature.
+</p>
+
+<h3>2.1 Calculation of volume</h3>
+<p>The volume of these fluid systems is related to their shape and size; for instance, the volume calculation differs for black holes of different shapes. The universe is so vast that, theoretically, we still don't know its exact size and shape. This raises the question: how should we calculate the volume of these gravitational systems? Current research seems to not focus heavily on this issue, often using the volume within the apparent horizon.
+The apparent horizon can be calculated using the following formula:</p>
+<div class="math-block" data-label="hij">
+$$
+    h^{ij}\frac{\partial
+\tilde{r}}{\partial x^{i}}\frac{\partial \tilde{r}}{\partial
+x^{j}}=0.
+$$
+</div>
+<p>Here, $h^{ij}$ represents the metric, which can be derived from the line element. 
+The line element for black hole is given by:</p>
+<div class="math-block">
+$$
+  ds^2 = -\left(1 - \frac{2M}{r}\right)dt^2 + \left(1 - \frac{2M}{r}\right)^{-1}dr^2 + r^2(d\theta^2 + \sin^2\theta d\phi^2).  
+$$
+</div>
+<p>The line element for FLRW Universe is given by:</p>
+<div class="math-block">
+$$
+ds^2=-dt^2 +a^2(t)\left[\frac{dr^2}{1-kr^2}+r^2\left(d\theta^2 +
+sin^2 \theta d\phi^2 \right)\right]
+$$
+</div>
+
+<p>where $a(t)$ is the scale factor and $k~(=0,-1,+1)$ represent the
+flat, open and closed model of the Universe. 
+For a Schwarzschild black hole, the metric is given by:</p>
+<div class="math-block">
+$$
+h_{ij} = \begin{pmatrix}
+-\left(1 - \frac{2M}{r}\right) & 0 \\
+0 & \left(1 - \frac{2M}{r}\right)^{-1}
+\end{pmatrix}.
+$$
+</div>
+<p>In contrast, for the FLRW universe, the metric is:</p>
+<div class="math-block">
+    $$
+    h_{ij} = \left( 
+    \begin{array}{cc}
+    -1 & 0 \\
+    0 & \frac{a^{2}}{1-kr^{2}}
+    \end{array}
+    \right).
+    $$ 
+</div>
+<p> From equation <a href="#hij">(1)</a>, we can derive the radius of the apparent horizon.
+     <span style="color: red; font-weight: bold;">This work has already been completed by others, 
+        and you can easily find it through a search.</span>
+For a black hole, the apparent horizon is given by:</p>
+<div class="math-block" data-label="AH">
+$$
+\tilde{r}_{h} = {2M}
+$$ 
+</div>
+<p>for the black hole, and</p>
+<div class="math-block">
+$$
+\tilde{r}_{h}=\frac{1}{\sqrt{H^{2}+\frac{k}{a^{2}}}}
+$$ 
+</div>
+<p>for the FLRW universe.</p>
+
+<p>The radius that satisfies this equation is the apparent horizon $r_h$. The shape within this radius is spherical, so the volume is given by:
+</p>
+<div class="math-block" data-label="V0">
+$$
+V=\frac{4\pi}{3} \tilde{r}_{h}^{3}
+$$
+</div>
+<p>Remember that all the physical quantities we discuss, such as energy, pressure, entropy, and enthalpy, are defined within the apparent horizon. Keep this in mind, as some discussions may mix these concepts.
+</p>
+<h3>2.2 Calculation of temperature</h3>
+<p>The temperature is generally expressed using the Hawking temperature:</p>
+<div class="math-block" data-label="T1">
+$$
+T=\frac{|\kappa|}{2\pi}
+$$
+</div>
+<p>The surface gravity $\kappa$ can be calculated using the following equation:</p>
+<div class="math-block">
+$$
+\kappa=\frac{1}{2\sqrt{-h}}\frac{\partial}{\partial x^{i}}\left(
+\sqrt{-h}~h^{ij}\frac{\partial \tilde{r}}{\partial x^{j}}\right)
+$$
+</div>
+<p> where  $h=det(h_{ij})$ is the determinant of the metric.  <span style="color: red; font-weight: bold;">The calculation of surface gravity for different systems can also be 
+        easily found through a quick search, so you don't need to perform the calculations yourself.</span>
+For a black hole, the surface gravity is given by:</p>
+<div class="math-block">
+$$
+    \kappa = \frac{M}{r_h{^2}}
+$$
+</div>
+<p>In the case of the FLRW universe, the surface gravity is:</p>
+<div class="math-block" data-label="kappa">
+$$
+\kappa=-\frac{1}{\tilde{r}_{h}}\left(1-\frac{\dot{\tilde{r}}_{h}}{2\tilde{r}_{h}H}
+\right)
+$$
+</div>
+
+<h3>2.3 Calculation of pressure</h3>
+<p> key to calculating pressure lies in the so-called Unified First Law:</p>
+<div class="math-block" data-label="uniE">
+$$
+    dE = A \psi + W dV.
+$$
+</div>
+<P>Here, $ E $ represents the total energy within the apparent horizon, 
+    $ A $ is the area of the apparent horizon, $ \psi $ is the energy-supply vector,
+     $ W $ is the work density, and $ dV $ is the change in the volume enclosed by the apparent horizon. At first glance, it might be difficult to see how this equation relates to pressure, but fortunately, it can be transformed into the following form:</P>
+
+     <div class="math-block" data-label="ETSWV">
+$$
+    dE = T dS - W dV.
+$$
+     </div>
+<P>Comparing this to the well-known first law of thermodynamics:</P>
+<div class="math-block" data-label="ETSPV">
+$$
+       dE = T dS - P dV,
+$$
+</div>
+<p>we can easily see that the work density $W$ is equivalent to the pressure $P$.
+The energy $E$ for a black hole is simply its mass, while for the FLRW universe, it corresponds to the Misner-Sharp energy. Next, we will use the FLRW universe as an example to calculate the pressure.
+
+Interestingly, just as we study ideal gases, we can also consider the FLRW universe as a perfect fluid. The pressure is derived using the kinetic energy-momentum tensor of this perfect fluid in conjunction with the Einstein field equations. The kinetic energy-momentum tensor for these fluids is the same, given by
+</p>
+<div class="math-block" data-label="fluid">
+$$
+T_{\mu\nu} = (\rho + p)u_\mu u_\nu + p g_{\mu\nu},
+$$
+</div>
+<p>where $\rho $ is the energy density, $p $ is the pressure, $ u_i$ is the four-velocity, and $g_{ij} $ is the metric tensor.
+The Einstein field equations can be written as:</p>
+<div class="math-block" data-label="ei">
+$$
+    R_{\mu\nu} - \frac{1}{2} R g_{\mu\nu} + \Lambda g_{\mu\nu} = \frac{8\pi }{c^4} T_{\mu\nu}
+$$
+</div>
+<p>Substituting equation <a href="#fluid">(16)</a>
+into equation <a href="#ei">(17)</a> and taking the time-time component, we obtain the Friedmann equation:
+</p>
+<p>We can start with the Friedmann equation:
+</p>
+<div class="math-block" data-label="F1">
+$$
+H^2+\frac{k}{a^2}=\frac{8\pi }{3}~\rho+\frac{\Lambda}{3}.
+$$
+</div>
+<p>Differentiate the first Friedmann equation with respect to time and use the conservation equation for the stress-energy tensor ($ \nabla_\nu T^{\mu\nu} = 0 $):
+</p>
+<div class="math-block" data-label="Cons">
+$$
+\dot{\rho}+3H(\rho+p)=0.
+$$
+</div>
+<p>Combining this with the first Friedmann equation, we get the second Friedmann equation:
+</p>
+<div class="math-block" data-label="F2">
+$$
+\dot{H}-\frac{k}{a^2}=-4\pi (\rho+p)
+$$
+</div>
+<p>Equations <a href="#F1">(18)</a>, <a href="#F2">(19)</a>, and <a href="#Cons">(20)</a> form a system of linear equations in $\rho$ and $p$, which can be solved easily:
+</p>
+<div class="math-block" data-label="rho-p">
+$$
+   \rho =\frac{3}{8\pi \tilde{r}_{h}^{2}}-\frac{\Lambda}{8\pi },
+   $$
+</div>
+<div class="math-block">
+    $$
+   p=-\frac{1}{8\pi  \tilde{r}_{h}^{2}}+\frac{\Lambda}{8\pi}.
+$$
+</div>
+<p>The work density function $W$ is given by Sean A. Hayward’s work
+<span class="citation">[3]</span>
+</p>
+<div class="math-block" data-label="work">
+$$
+W=-\frac{1}{2}T^{ij}h_{ij}=\frac{1}{2}(\rho-p)=-\frac{1}{8\pi  \tilde{r}_{h}^{2}}=-\frac{-8}{3}\pi r_h^{4}TV.
+$$
+</div>
+<p>If we approximate the temperature $T$ as $T = \frac{1}{2\pi r_h}$, then the pressure is given by:
+</p>
+<div class="math-block" data-label="pressure">
+$$
+P=W=\frac{-3}{8\pi r_h^{4}}T(r_h)V(r_h).
+$$
+</div>
+<p>That is just the so-called equation of state.
+</p>
+
+
+<p>Note that all $P$, $V$, and $T$ are functions of one variable $r_h$, so once you derive the equation of state, you can investigate other thermodynamic properties as given below.
+</p>
+<h3>2.3.1 Phase transition</h3>
+<p>The conditions for pressure-volume phase transitions typically involve changes in the state of matter at specific temperatures and pressures. If we plot the relationship between pressure and volume, the point in the phase diagram where the liquid and gas phases coexist is known as the <b>critical point</b>. At this point, the pressure, volume, and temperature satisfy the critical conditions:
+</p>
+<div class="math-block">
+$$
+    (\frac{\partial P/\partial r_h}{\partial V/\partial r_h})_T =0, \quad
+    (\frac{\partial^2 P/\partial {r^2_h}}{\partial V^2/\partial {r^2_h}})_T = 0 
+$$
+</div>
+<p>The relationship between pressure and volume differs on either side of this point, which is what we refer to as a phase transition.
+</p>
+<h3>2.3.2 Heat capacities</h3>
+<p>Since temperature, entropy, and pressure are functions of $r_h$, we use the following formulas to calculate different heat capacities:
+</p>
+<ol>
+    <li><b>Constant Volume Heat Capacity $C_V$</b>
+        <div class="math-block">
+        $$
+        C_V = \left(\frac{\partial Q}{\partial T}\right)_V = \left(\frac{\partial (T dS)}{\partial T}\right)_V = T \left(\frac{\partial S}{\partial T}\right)_V
+        $$
+        </div>
+    </li>
+    <li><b>Constant Pressure Heat Capacity $C_P$</b>
+        <div class="math-block">
+        $$
+        C_P = \left(\frac{\partial Q}{\partial T}\right)_P = \left(\frac{\partial (T dS)}{\partial T}\right)_P = T \left(\frac{\partial S}{\partial T}\right)_P
+        $$
+        </div>
+    </li>
+    <li><b>Isothermal Heat Capacity $C_T$</b>
+        <div class="math-block">
+        $$
+        C_T = \left(\frac{\partial Q}{\partial P}\right)_T = \left(\frac{\partial (T dS)}{\partial P}\right)_T = T \left(\frac{\partial S}{\partial P}\right)_T
+        $$
+        </div>
+    </li>
+    <li><b>Isentropic Heat Capacity $C_S$</b>
+        <div class="math-block">
+        $$
+        C_S = \left(\frac{\partial Q}{\partial P}\right)_S = \left(\frac{\partial (T dS)}{\partial P}\right)_S
+        $$
+        </div>
+    </li>
+</ol>
+
+
+<h3>2.3.3 Joule-Thomson coefficient</h3>
+
+<p>The Joule-Thomson coefficient, denoted by $\mu$, is a thermodynamic parameter that describes the change in temperature during an adiabatic (no heat exchange) expansion or compression at constant enthalpy. Simply put, it quantifies how much the temperature of a substance changes when it is forced through a valve or porous plug while maintaining constant enthalpy.
+</p>
+<p>The Joule-Thomson coefficient is mathematically defined as:
+</p>
+<div class="math-block">
+$$
+\mu = \left(\frac{\partial T}{\partial P}\right)_H
+$$
+</div>
+
+
+<h2>4. ways to play it</h2>
+<p>Here is the general logic and framework of this type of research. You can easily see that the main challenge lies in obtaining Equations <a href="#AH">(7)</a>, <a href="#kappa">(12)</a>, and <a href="#work">(23)</a>. Fortunately, you can find these equations in the research works of Hayward and Rong-Gen Cai. The rest is just simple mathematical operations that can be performed with a small amount of knowledge and high school-level math skills. 
+<b><span style="color: red;">You might even realize that calculating phase transitions, specific heat capacity, and thermal conductivity coefficients is more aligned with the field of thermodynamics rather than cosmology.</span></b> Given this, why are we still able to find hundreds or even thousands of papers in this area? The answer, of course, is that our clever researchers, aside from plagiarism and redundant publications, have also discovered loopholes and found new ways to play the game.
+</p>
+
+<p>Research on thermodynamic properties is carried out by performing various calculations on the equation of state. What you should remember is that 
+    pressure is not directly calculated; it is obtained based on the similarity between Equations <a href="#ETSWV">(14)</a> and <a href="#ETSPV">(15)</a>. 
+    The key to deriving the equation of state is obtaining Equation <a href="#ETSWV">(14)</a> from Equation <a href="#uniE">(13)</a>.
+     Note that Equation <a href="#uniE">(uniE)</a> is a unified equation that can be applied to any system, while Equation <a href="#ETSWV">(14)</a> is simply 
+     a transformation of Equation <a href="#uniE">(13)</a>. 
+Equation <a href="#ETSWV">(14</a> contains five physical quantities: energy, temperature, entropy, work density, and volume. 
+The volume here refers to the volume within the apparent horizon, and there is only one way to calculate it. 
+The temperature is the Hawking temperature, and you cannot manipulate these two physical quantities. The energy $E$ can be calculated in two ways: one is to use $\rho$ from the energy-momentum tensor of the fluid:
+</p>
+<div class="math-block" data-label="erho">
+$$
+E = \rho dV.
+$$
+</div>
+
+<p>The second way is to use the Misner-Sharp energy. You just need to find the corresponding energy for the metric in your research. Generally, this type of energy is based on $E = \frac{R}{2}$, with some perturbation added, which is quite similar. Interestingly, the result from Equation <a href="#erho">(31)</a> for the same metric may differ from the Misner-Sharp energy. 
+</p>
+<p><b><span style="color: green;">If someone has used Equation <a href="#erho">(31)</a> in their research and published a paper, you can redo it using the Misner-Sharp energy and easily get another paper. The paper <span style="color: red;">"First Principle Study of Gravitational Pressure and Thermodynamics of FRW Universe"</span> was derived in this way.</span></b>
+</p>
+<p>Once $E$, $V$, and $T$ are determined, there are still two quantities, $S$ and $P$, in Equation <a href="#ETSWV">(14)</a> that can be selectively determined. The easier method is to first find $S$ from related literature, and then use Equation <a href="#ETSWV">(14)</a> to calculate $P$. Another approach is to harmonize $S$ and $P$ based on your needs-add something to $S$ and subtract something from $P$ so that the equation still holds. After all, our goal is just to publish a paper, right?
+</p>
+<p>One of the most common ways to publish papers is to find the Friedmann equation corresponding to different metrics and redo the same work. After solving the Friedmann equation, you might get different $p$ and $\rho$ compared to previous results, which means the equation of state will also be different. You can then calculate phase transitions, specific heat capacity, thermal conductivity coefficients, etc., from the equation of state. So how many different metrics are there, really? You’ll need to think about this and do some thorough online research. It seems that the hardest part of this kind of study is finding different metrics that correspond to distinct Friedmann equations.
+</p>
+
+<h2>5. Research integrity</h2>
+<p>
+From the above discussion, it’s clear that this type of paper can be easily mass-produced. Even our undergraduate thesis projects are more challenging and meaningful than this, yet we don’t consider our work worthy of publication. The research papers on phase transitions, specific heat capacity, and thermal conductivity seem to simply modify the structure and parameters of equations to obtain different results, rather than genuinely addressing a specific problem. In fact, when multiple results exist for a single issue, the authors often fail to emphasize the underlying assumptions. These authors are experts at muddying the waters, and I don't see them as true scientists, but rather as managers of “paper mills”. Perhaps the authors, readers, and editors may have objections to my views. I’d actually be interested in hearing their thoughts and understanding how such low-quality papers get published. After all, academic debates both protect some individuals and serve as a shield for those who engage in academic misconduct.
+</p><p>
+General relativity has developed over more than a century, and its integration with cosmology has deepened our understanding of the universe. Generations of outstanding individuals have devoted their energy and time to this field. These efforts deserve respect, not to be stolen or trampled upon. Scientific achievements have great transferability: while original research is challenging, it is relatively easy for others to accept, replicate, and rewrite. Many people mass-produce papers to transfer others' contributions to themselves. To amateurs, these cutting-edge studies may seem novel, no matter how many times they are copied, while experts often struggle to influence public perception. This ease of transferability is a key issue. Of course, it’s not just about honor; the main reason for research misconduct is often tied to personal gain. The publication of papers affects the distribution of various scientific grants. Researchers plagiarize scientific results to secure funding under false pretenses. This leads to two fatal problems: unfairness to those passionate and honest scientists, and severe hindrance to scientific progress. These are some of the internal and external factors behind the rise of ``paper mills" in cosmological thermodynamics from the authors’ perspective.
+</p><p>
+The issue of research misconduct extends beyond just the authors; it also involves editors and reviewers. It’s difficult to ensure that editors possess both integrity and competence, especially integrity. Editors have significant power over whether a paper gets published, meaning that an author’s standing in the editor’s eyes can matter more than the quality of the paper. After all, editors decide whose hands the paper lands in for review. These are the internal and external factors from the editors’ perspective that contribute to the emergence of “paper mills”. Therefore, we hope that editors will be impartial and possess sufficient competence, with integrity being even more crucial.
+</p><p>
+The relationship between reviewers and authors also impacts whether a paper is accepted. For most reviewers, personal relationships often outweigh the creativity of the paper. If the relationship is good, the paper can be published as long as there are no major errors. Reviewers aren’t afraid of making mistakes because readers and authors will never know who the reviewers are. Thus, in many cases, reviewers freely make malicious comments on good papers or praise poor ones. <span style="color: green; font-weight: bold;">An interesting phenomenon is the formation of cliques among reviewers: a few people within a field review each other’s papers-“you review mine, I review yours; you let me publish, I let you publish.”</span> New scientists find it hard to break into the field, which is one reason for the lack of creativity in published papers. These are some of the internal and external factors from the reviewers’ perspective that contribute to the emergence of “paper mills” in cosmological thermodynamics. It seems that these issues are interconnected with human nature, and they are among the problems that publishers and journal editorial boards need to address.
+</p>
+
+<h2>References</h2> 
+    <ol>
+        <li>Jacob D. Bekenstein, Phys. Rev. D. 7, 2333 (1973).</li>
+        <li>S. W. Hawking, Phys. Rev. D. 13, 191 (1976).</li>
+        <li>S. A. Hayward, Class. Quant. Grav. 15, 3147 (1998).</li>
+    </ol>
+
+
+
+
+      
+  
+    <script src="katex.js"></script>
+    <script src="auto-render.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+      
+        renderMathInElement(document.body, {
+          delimiters: [
+            { left: "$$", right: "$$", display: true },
+            { left: "\\[", right: "\\]", display: true },
+            { left: "$", right: "$", display: false },
+            { left: "\\(", right: "\\)", display: false }
+          ]
+        });
+  
+     
+        const mathBlocks = document.querySelectorAll(".math-block");
+        mathBlocks.forEach((block, index) => {
+       
+          const label = document.createElement("span");
+          label.textContent = `(${index + 1})`;
+          label.id = block.dataset.label; // 
+          label.style.marginLeft = "10px";
+          block.style.display = "flex";
+          block.style.alignItems = "center";
+          block.appendChild(label);
+        });
+      });
+    </script>
+
+</div>
+</body>
+</html>
